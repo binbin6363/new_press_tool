@@ -11,7 +11,9 @@
 #include <netdb.h>
 #include <fcntl.h>
 #include <sys/epoll.h>
+#include "log.h"
 
+using namespace utils;
 
 int main(int argc, char *argv[])
 {
@@ -24,12 +26,13 @@ int main(int argc, char *argv[])
 	// 3. register fd to epoll
 
 	// 4. start test engine, loop
+	LOG(INFO)("start test engine, loop...");
 
 	// 5. done, show test result info
 
 	// 6. clean data.
 
-	
+	LOG(INFO)("done test tool!");
 	return ret;
 }
 

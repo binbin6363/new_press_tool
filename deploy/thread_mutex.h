@@ -8,7 +8,7 @@
 #include <pthread.h>
 
 #if 1
-namespace CPPSocket {
+namespace utils {
 
 
 //! @class Thread_Mutex
@@ -53,7 +53,7 @@ private:
 };
 
 
-} // namepsace CPPSocket
+} // namepsace utils
 
 #endif
 #endif // _THREAD_MUTEX_H_
