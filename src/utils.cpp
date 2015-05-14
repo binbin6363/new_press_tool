@@ -12,3 +12,16 @@ int MakeUniqSeq()
 }
 
 
+bool IsFileExist(const char *path)
+{
+    if((access(path, F_OK)) != -1)
+    {   
+        return true;   
+    }   
+    else  
+    {   
+        return false;
+    }   
+}
+
+
